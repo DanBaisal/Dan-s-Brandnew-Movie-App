@@ -1,3 +1,4 @@
+alert('Swipe right to browse movie categories');
 // First Values
 const MOVIE_DB_API = '89293ae0e87da32741b4f2c50a198523';
 const MOVIE_DB_ENDPOINT = 'https://api.themoviedb.org';

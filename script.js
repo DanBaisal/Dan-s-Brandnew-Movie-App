@@ -136,7 +136,7 @@ searchButton.onclick = function (event) {
     resetInput();
 }
 
-// Click on any movies
+// Tap on any movies
 document.onclick = function (event) {
     // log('Event: ', event);
     const { tagName, id } = event.target;
