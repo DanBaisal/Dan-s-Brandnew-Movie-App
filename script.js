@@ -30,8 +30,8 @@ function createIframe(video) {
     const videoKey = (video && video.key) || 'No key found!!!';
     const iframe = document.createElement('iframe');
     iframe.src = `http://www.youtube.com/embed/${videoKey}`;
-    iframe.width = 360;
-    iframe.height = 315;
+    iframe.width = 270;
+    iframe.height = 270;
     iframe.allowFullscreen = true;
     return iframe;
 }
@@ -59,7 +59,7 @@ function createVideoTemplate(data) {
         return;
     }
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 1; i++) {
         const video = videos[i];
         insertIframeIntoContent(video, content);
     }
@@ -137,7 +137,6 @@ searchButton.onclick = function (event) {
 }
 
 // Click on any movies
-// Event Delegation
 document.onclick = function (event) {
     // log('Event: ', event);
     const { tagName, id } = event.target;

@@ -1,13 +1,19 @@
 body {
     margin: 0;
+    padding: auto;
     background-color: black;
 }
 
 h1 {
-    color: white;
+    font-size: 4.5rem;
+    width: 70%;
 }
 
 h2 {
+    font-size: 2.5rem;
+}
+
+h1, h2 {
     color: white;
 }
 
@@ -44,12 +50,6 @@ section .imageContainer {
     padding: 20px;
 }
 
-
-.content-display {
-    display: block;
-}
-
-
 .content-display {
     display: block;
     display: flex;
@@ -64,26 +64,21 @@ section .imageContainer {
 
 
 #content-close {
-    cursor: pointer;
     position: absolute;
-    top: 20px;
-    padding: 10px;
+    top: 10px;
+    padding-right: 15px;
     /* width: 35px;; */
     border: 1px solid lightgrey;
     border-radius: 45%;
-    left: 20px;
+    right: 10px;
+    color: white;
 }
 
 
 .imageContainer {
-    transition: 250ms all;
-    width: 300px;
-}
-
-.imageContainer {
+    width: 200px;
     border-radius: 4px;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
 }
 
 .imageContainer img {
@@ -95,12 +90,12 @@ section .imageContainer {
     background-color: green;
     border-color: green;
     outline: none;
-    min-height: 38px;
+    min-height: 50px;
+    min-width: 50px;
     font-weight: 400;
     text-align: center;
-    cursor: pointer;
     padding: .375rem .75rem;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.5;
     border-radius: .25rem;
 }
@@ -110,7 +105,7 @@ section .imageContainer {
 }
 
 .form-control {
-    width: 760px;
+    width: 200px;
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
